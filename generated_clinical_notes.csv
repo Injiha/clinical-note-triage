@@ -1,0 +1,190 @@
+Patient ID,Name,Age,Gender,Diagnosis,Visit Number,Clinical Note
+8629,Spencer Mills,80,Female,Small Cell Lung Cancer,1,"**Clinical Note**
+
+**Patient Name**: Dorothy Stevens  
+**DOB**: 04/11/1943  
+**Age**: 80  
+**Gender**: Female  
+**MRN**: 123456789
+
+**Date of Visit**: 10/03/2023  
+**Attending Physician**: Dr. James Carter  
+**Location**: Oncology Clinic, General Hospital
+
+---
+
+**Chief Complaint**: Follow-up appointment for small cell lung cancer (SCLC).
+
+**History of Present Illness**:  
+Dorothy is an 80-year-old female with a known diagnosis of small cell lung cancer, limited stage, diagnosed in July 2023. She completed a course of cisplatin and etoposide chemotherapy and concurrent chest radiation therapy in September 2023. Presently here for a post-treatment follow-up.
+
+Since treatment completion, patient reports significant fatigue but has been gradually improving. Appetite has slightly increased, and she reports a 2 lb weight gain over the past month. Denies dyspnea, hemoptysis, or new chest pain. Mild, persistent cough remains, non-productive. No recent fever, chills, or night sweats noted.
+
+**Past Medical History**:  
+- Hypertension  
+- Hyperlipidemia  
+- Osteoarthritis  
+- Previous smoker (40 pack-year history, quit 10 years ago)
+
+**Medications**:  
+- Lisinopril 10 mg daily  
+- Atorvastatin 20 mg daily  
+- Acetaminophen 500 mg as needed for joint pain  
+- Multivitamin daily
+
+**Allergies**:  
+- NKDA
+
+**Family History**:  
+- Father diagnosed with COPD  
+- Mother deceased, breast cancer
+
+**Social History**:  
+- Former smoker, no alcohol use, lives with daughter, good family support
+
+**Review of Systems**:  
+- *General*: Reports fatigue, otherwise negative for fever, weight loss  
+- *Respiratory*: Mild non-productive cough, no dyspnea or wheezing  
+- *Cardiovascular*: No chest pain, palpitations  
+
+**Physical Examination**:  
+- Vitals: BP 128/80, HR 72, RR 18, Temp 98.1°F  
+- General: Alert and oriented, appears well-nourished, fatigued  
+- Lungs: CTA bilaterally, mild expiratory wheeze, no crackles  
+- Heart: Regular rate and rhythm, no murmurs  
+- Abdomen: Soft, non-tender, no hepatosplenomegaly  
+- Extremities: No edema, peripheral pulses intact  
+
+**Laboratory and Imaging Studies**:  
+- Recent CBC and CMP within normal limits  
+- PET scan scheduled for next month as follow-up imaging 
+
+**Assessment**:  
+1. Small cell lung cancer, limited stage, post-treatment  
+2. Hypertension, well-controlled  
+3. Hyperlipidemia, stable  
+4. Osteoarthritis, symptomatic management
+
+**Plan**:  
+1. Continue monitoring SCLC with follow-up PET scan next month; consider MRI of brain to rule out CNS involvement as standard after initial treatment.  
+2. Supportive care: Encourage small, frequent meals; continue dietary supplements to support weight gain and energy levels.  
+3. Address fatigue with gentle physical activity as tolerated; evaluate further if it persists.  
+4. Maintain current medication regimen for hypertension and hyperlipidemia.  
+5. Follow up in Oncology Clinic in 1 month or sooner if symptoms worsen.
+
+**Patient Education and Counseling**:  
+Discussed treatment outcomes and expectations. Reinforced importance of follow-up and symptom monitoring. Patient and family expressed understanding.
+
+**Signature**:  
+Dr. James Carter, MD  
+Oncology  
+
+---
+
+**Next Appointment**: 11/03/2023"
+3544,Christopher Sosa,58,Other,Small Cell Lung Cancer,2,"**Patient Name:** [Other Patient Name]  
+**Medical Record Number:** [MRN]  
+**Date of Birth:** [DOB]  
+**Age:** 58  
+**Gender:** Other  
+**Date:** [Today's Date]
+
+**Subjective:**
+
+The patient is a 58-year-old with a recent diagnosis of small cell lung cancer (SCLC). Presented to the clinic today for follow-up after an initial diagnosis confirmed via CT scan and biopsy from the right upper lobe.
+
+- **Chief Complaint:** Shortness of breath and persistent cough.
+- **HPI:** The patient reports increased fatigue and dyspnea on exertion over the past 2 weeks. The cough is productive, with occasional hemoptysis. Reports a weight loss of approximately 10 lbs in the last 6 weeks, and loss of appetite. No fevers, but some night sweats are present. Denies chest pain or palpitations.  
+- **PMH:** No known prior history of respiratory illnesses. Hypertension controlled on medications. Former smoker, 30 pack-years, quit 5 years ago.  
+- **FH:** No family history of cancer.  
+- **SH:** Lives alone, support from family. Not currently employed. Social drinking, no drug use.
+
+**Objective:**
+
+- **Vitals:** BP 130/85, HR 90, RR 20, Temp 98.6°F, SpO2 92% on room air.
+- **General:** Appears slightly cachectic, alert, and oriented x3.
+- **Respiratory:** Breath sounds decreased in the right upper lobe. Crackles noted bilaterally. No wheezing.
+- **Cardiovascular:** Regular rate and rhythm, no murmurs.
+- **Abdomen:** Soft, non-tender, no hepatosplenomegaly.
+- **Extremities:** No clubbing or cyanosis, mild peripheral edema.
+- **Skin:** No rashes or lesions.
+
+**Assessment:**
+
+1. **Small Cell Lung Cancer (SCLC):** Stage to be determined post-PET scan.  
+2. Dyspnea and cough - likely secondary to primary lung tumor.  
+3. Weight loss and night sweats - concerning for systemic involvement or chemotherapy side effects.
+
+**Plan:**
+
+- **Diagnostics:**
+  - Schedule PET scan to assess for metastasis.
+  - CBC, CMP to monitor for paraneoplastic syndromes.
+
+- **Therapeutics:**
+  - Start chemotherapy regimen with Etoposide and Cisplatin (EP regimen).
+  - Consider adding radiation therapy following oncology consultation.
+  - Prescribe albuterol inhaler PRN for dyspnea relief.
+
+- **Symptom Management:**
+  - Recommend high-calorie nutritional supplements to address weight loss.
+  - Referral to oncology dietitian for dietary support.
+  - Encourage hydration and rest.
+
+- **Follow up:**
+  - Appointment with medical oncology within 1 week.
+  - Reassess symptomatology and treatment tolerance in follow-up.
+
+**Counseling:**
+Discussed diagnosis, treatment options, and prognosis with the patient. Patient expressed understanding and willingness to proceed with recommended therapy plan. Provided educational materials on SCLC.
+
+**Signature:**
+
+[Clinician Name], MD  
+[Contact Information]"
+9701,Karen Kramer,50,Female,Small Cell Lung Cancer,3,"[Date: 10/15/2023]  
+[Time: 14:00]  
+[Clinic: Oncology Clinic]  
+[Physician: Dr. Mark Daniels]  
+[Patient Name: Jane Doe]  
+[Date of Birth: 05/25/1973]  
+[MRN: 12345678]  
+
+**SUBJECTIVE:**  
+Jane Doe is a 50 y/o F with a recent dx of small cell lung cancer (SCLC), presented to the oncology clinic for follow-up. She reports persistent cough and dyspnea on exertion, both of which have been worsening over the past few weeks. She also notes fatigue and unintentional weight loss of 5 lbs over the last month. Denies hemoptysis but describes frequent episodes of progressive wheezing. Additionally, she reports decreased appetite and generalized weakness. Denies any chest pain or fever. 
+
+PMH: HTN, Hyperlipidemia  
+PSH: Cholecystectomy (2010)  
+Medications: Lisinopril 10 mg daily, Atorvastatin 20 mg daily  
+Allergies: NKDA  
+
+**OBJECTIVE:**  
+- Vitals: BP 128/78, HR 86, RR 22, Temp 98.4°F, SpO2 92% on RA  
+- Gen: Alert, oriented, tired-appearing  
+- Lungs: Decreased breath sounds bilateral bases, scattered expiratory wheezes noted, no rales  
+- Cardiac: RRR, no murmurs  
+- Abd: Soft, non-tender, normoactive bowel sounds  
+- Ext: No edema  
+- Skin: No rashes or lesions  
+- Neuro: No focal deficits  
+
+**ASSESSMENT:**  
+1. SCLC - Patient with worsening respiratory symptoms likely related to progression of cancer. Recent CXR and CT showed a large central lesion in the RUL with mediastinal LN involvement. Pet scan pending for further staging.  
+2. Fatigue, weight loss - Cachexia related to malignancy.  
+3. Hypertension - Controlled with current regimen.  
+4. Hyperlipidemia - Stable on atorvastatin.  
+
+**PLAN:**  
+- Continue current antihypertensive and lipid-lowering medications.  
+- Schedule PET scan to assess extent of disease for staging.  
+- Referral to pulmonology for further evaluation of dyspnea and consideration for bronchoscope if indicated.  
+- Initiate systemic chemotherapy - Etoposide and Carboplatin regimen after discussing potential side effects and obtaining patient consent. Start within the next week.  
+- Consider nutrition consult to address weight loss and appetite issues.  
+- Educate the patient on smoking cessation and supportive measures to alleviate respiratory symptoms.  
+- RTC in 2 weeks for chemotherapy initiation and reassessment.  
+
+**Patient and family understanding:**
+The diagnosis and treatment plan, including potential side effects and prognosis, were discussed in detail with the patient and her family. All questions were addressed, and they express understanding and willingness to proceed with planned interventions.
+
+[SIGNED: Mark Daniels, MD]  
+[Dictated: 10/15/2023]"
