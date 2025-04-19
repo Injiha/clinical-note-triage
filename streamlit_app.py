@@ -10,7 +10,7 @@ def load_data():
 df = load_data()
 
 # App Title
-st.title("🩺 Synthetic Clinical Notes - Table View")
+st.title("Synthetic Clinical Notes - Table View")
 
 # Display the whole table
 st.dataframe(df, use_container_width=True)
