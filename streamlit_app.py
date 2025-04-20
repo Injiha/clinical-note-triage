@@ -3,9 +3,11 @@ import pandas as pd
 import joblib
 import re
 import nltk
-from nltk import word_tokenize, WordNetLemmatizer
-
+import os
+import pickle  
+from nltk import WordNetLemmatizer
 from nltk.tokenize.punkt import PunktSentenceTokenizer
+
 
 # Add local nltk data path
 nltk.data.path.append("./nltk_data")
