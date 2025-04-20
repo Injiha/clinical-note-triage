@@ -54,9 +54,12 @@ def clean_note(text):
     text = re.sub(r'[^\w\s\n]', '', text)
     text = re.sub(r'(\n)+', ' ', text)
     text = re.sub(r'\s+[a-zA-Z]\s+', ' ', text)
-    tokens = nltk.word_tokenize(text.lower(), tokenizer=sentence_tokenizer)
+
+    # Tokenize using  Punkt tokenizer
+    tokens = [word for sent in sentence_tokenizer.tokenize(text.lower()) for word in nltk.word_tokenize(sent)]
     lemmas = [lemmatizer.lemmatize(w, 'v') for w in tokens]
     return lemmas
+
 
 # Streamlit UI
 st.title("Clinical Note Classifier")
