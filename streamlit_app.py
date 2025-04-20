@@ -1,19 +1,71 @@
-
-
 import streamlit as st
 import pandas as pd
+import joblib
+import re
+import nltk
+from nltk import word_tokenize, WordNetLemmatizer
 
-@st.cache_data
-def load_data():
-    return pd.read_csv("clinicalnotes_merged.csv")  # Update filename if needed
+import joblib
 
-df = load_data()
 
-# App Title
-st.title("Synthetic Clinical Notes - Table View")
+nltk.download('punkt')
+nltk.download('wordnet')
 
-# Display the whole table
-st.dataframe(df, use_container_width=True)
+def identity_function(x):
+    return x
 
-st.caption("This table displays all generated clinical notes for analysis and modeling.")
 
+# Load saved model artifacts
+model = joblib.load("clinical_note_model.pkl")
+vectorizer = joblib.load("clinical_note_vectorizer.pkl")
+label_encoder = joblib.load("clinical_note_label_encoder.pkl")
+
+lemmatizer = WordNetLemmatizer()
+
+# Preprocessing
+def clean_note(text):
+    boilerplate = [
+        'clinical note', 'patient name', 'chief complaint', 'history of present illness',
+        'visit date', 'signature', 'date of birth', 'subjective', 'objective', 'dob'
+    ]
+    pattern = '|'.join([r'\b' + re.escape(p) + r'\b' for p in boilerplate])
+    text = re.sub(pattern, '', str(text), flags=re.IGNORECASE)
+    text = re.sub(r'-', '', text)
+    text = re.sub(r'\d', '', text)
+    text = re.sub(r'[^\w\s\n]', '', text)
+    text = re.sub(r'(\n)+', ' ', text)
+    text = re.sub(r'\s+[a-zA-Z]\s+', ' ', text)
+    tokens = word_tokenize(text.lower())
+    lemmas = [lemmatizer.lemmatize(w, 'v') for w in tokens]
+    return lemmas
+
+# Streamlit UI
+st.title("Clinical Note Classifier")
+
+uploaded_file = st.file_uploader("Upload your clinical notes CSV", type="csv")
+
+if uploaded_file is not None:
+    df = pd.read_csv(uploaded_file)
+    st.subheader("Uploaded Data")
+    st.dataframe(df)
+
+    if 'Clinical Note' not in df.columns:
+        st.error("File must contain a 'Clinical Note' column.")
+    else:
+        st.info("Processing and classifying notes...")
+
+        # Clean and vectorize
+        processed_notes = df["Clinical Note"].apply(clean_note)
+        X_new = vectorizer.transform(processed_notes)
+        
+        # Predict
+        preds = model.predict(X_new)
+        preds_labels = label_encoder.inverse_transform(preds)
+        df["Prediction"] = preds_labels
+
+        st.subheader("Predictions")
+        st.dataframe(df)
+
+        # Download option
+        csv = df.to_csv(index=False).encode('utf-8')
+        st.download_button("Download Predictions", data=csv, file_name="predictions.csv", mime="text/csv")
