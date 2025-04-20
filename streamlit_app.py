@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 import re
-import nltk
 import os
-import pickle  
+import pickle 
+import nltk
 from nltk import WordNetLemmatizer
 from nltk.tokenize.punkt import PunktSentenceTokenizer
 
@@ -12,11 +12,13 @@ from nltk.tokenize.punkt import PunktSentenceTokenizer
 # Add local nltk data path
 nltk.data.path.append("./nltk_data")
 
-# Manually load the Punkt tokenizer
-with open("nltk_data/tokenizers/punkt/english.pickle", "rb") as f:
-    sentence_tokenizer = pickle.load(f)
+try:
+    with open("nltk_data/tokenizers/punkt/english.pickle", "rb") as f:
+        sentence_tokenizer = pickle.load(f)
+except FileNotFoundError:
+    st.error("Missing punkt tokenizer file. Please ensure 'nltk_data/tokenizers/punkt/english.pickle' exists.")
+    st.stop()
 
-lemmatizer = WordNetLemmatizer()
 
 # Download NLTK models if not found
 try:
@@ -75,6 +77,7 @@ if uploaded_file is not None:
         st.error("File must contain a 'Clinical Note' column.")
     else:
         st.info("Processing and classifying notes...")
+
 
         # Clean and vectorize
         processed_notes = df["Clinical Note"].apply(clean_note)
