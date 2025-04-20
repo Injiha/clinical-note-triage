@@ -5,6 +5,8 @@ import re
 import nltk
 from nltk import word_tokenize, WordNetLemmatizer
 
+nltk.data.path.append("./nltk_data")
+
 # Download NLTK models if not found
 try:
     nltk.data.find("tokenizers/punkt")
