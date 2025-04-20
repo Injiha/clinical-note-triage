@@ -5,11 +5,17 @@ import re
 import nltk
 from nltk import word_tokenize, WordNetLemmatizer
 
-import joblib
+# Download NLTK models if not found
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
 
+try:
+    nltk.data.find("corpora/wordnet")
+except LookupError:
+    nltk.download("wordnet")
 
-nltk.download('punkt')
-nltk.download('wordnet')
 
 def identity_function(x):
     return x
