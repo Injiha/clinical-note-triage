@@ -5,7 +5,16 @@ import re
 import nltk
 from nltk import word_tokenize, WordNetLemmatizer
 
+from nltk.tokenize.punkt import PunktSentenceTokenizer
+
+# Add local nltk data path
 nltk.data.path.append("./nltk_data")
+
+# Manually load the Punkt tokenizer
+with open("nltk_data/tokenizers/punkt/english.pickle", "rb") as f:
+    sentence_tokenizer = pickle.load(f)
+
+lemmatizer = WordNetLemmatizer()
 
 # Download NLTK models if not found
 try:
@@ -43,7 +52,7 @@ def clean_note(text):
     text = re.sub(r'[^\w\s\n]', '', text)
     text = re.sub(r'(\n)+', ' ', text)
     text = re.sub(r'\s+[a-zA-Z]\s+', ' ', text)
-    tokens = word_tokenize(text.lower())
+    tokens = nltk.word_tokenize(text.lower(), tokenizer=sentence_tokenizer)
     lemmas = [lemmatizer.lemmatize(w, 'v') for w in tokens]
     return lemmas
 
